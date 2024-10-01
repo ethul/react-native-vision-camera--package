@@ -26,26 +26,6 @@
     "VisionCamera.podspec",
     "README.md"
   ],
-  "scripts": {
-    "typescript": "tsc --noEmit",
-    "lint": "eslint \"**/*.{js,ts,tsx}\"",
-    "lint-ci": "yarn lint -f ./node_modules/@firmnav/eslint-github-actions-formatter/dist/formatter.js",
-    "start": "cd example && yarn start",
-    "build": "bob build",
-    "release": "bob build && release-it",
-    "pods": "cd example && yarn pods",
-    "bootstrap": "yarn && cd example && yarn && yarn pods",
-    "check-android": "scripts/ktlint.sh && scripts/clang-format.sh",
-    "check-ios": "scripts/swiftlint.sh && scripts/swiftformat.sh && scripts/clang-format.sh",
-    "check-js": "yarn lint --fix && yarn typescript",
-    "check-cpp": "scripts/clang-format.sh",
-    "check-all": "scripts/check-all.sh",
-    "clean-ios": "scripts/clean-ios.sh",
-    "clean-android": "scripts/clean-android.sh",
-    "clean-js": "scripts/clean-js.sh",
-    "prepack": "cp ../README.md ./README.md",
-    "postpack": "rm ./README.md"
-  },
   "keywords": [
     "react",
     "native",
@@ -174,6 +154,5 @@
         }
       ]
     ]
-  },
-  "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
+  }
 }
